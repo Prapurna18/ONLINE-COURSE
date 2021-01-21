@@ -1,0 +1,44 @@
+.form-control{
+    width :450px;
+    height:40px;
+    border-style:groove;
+    color:darkgrey;
+
+
+
+}
+.form-controls{
+    width :200px;
+    height:40px;
+    
+    
+
+}
+.space{
+    margin-left: 50px;
+}
+
+.btn btn-primary{
+    width:400px;
+    height:40px;
+}
+.formgroup{
+    position: relative;
+    color:darkgrey;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.error-msg{
+    color:red;
+}
+.signUp{
+    background-image: url("./img/SignUp.jpg");
+    height:90vh;
+
+}
+.right-side-container{
+    margin-left:58px;
+    margin-top:30px;
+    
+}
