@@ -14,56 +14,56 @@ function App() {
   return (
     <Router>
       <div>
-        <Header></Header>
+        <Header>
+          <div className="App">
+            <div className="container-fluid complete-background">
+              <div className="row">
+                <div className="col-sm-12 extra-space">
+                  <Switch>
+                    <Route exact path="/Home">
+                      <Home />
+                    </Route>
 
-        <div className="App">
-          <div className="container-fluid complete-background">
-            <div className="row">
-              <div className="col-sm-12 extra-space">
-                <Switch>
-                  <Route exact path="/Home">
-                    <Home />
-                  </Route>
-                  
-                  <Route path="/Signup">
-                    <Signup />
-                  </Route>
+                    <Route path="/Signup">
+                      <Signup />
+                    </Route>
 
-                  {/* <Signup>
+                    {/* <Signup>
 
                   </Signup> */}
 
-                  {/* <signIn> */}
-                  {/* <Signin> */}
-                  <Route path="/Signin">
-                    <Signin />
-                  </Route>
-                  {/* <Route path="/explore">
+                    {/* <signIn> */}
+                    {/* <Signin> */}
+                    <Route path="/Signin">
+                      <Signin />
+                    </Route>
+                    {/* <Route path="/explore">
                     <explore />
                   </Route> */}
 
-                  <Route path="/Forgetpassword">
-                    <Forgetpassword />
-                  </Route>
-                  <Route path="/Security">
-                    <Security />
-                  </Route>
-                  <Route path="/Reset">
-                    <Reset />
-                  </Route>
+                    <Route path="/Forgetpassword">
+                      <Forgetpassword />
+                    </Route>
+                    <Route path="/Security">
+                      <Security />
+                    </Route>
+                    <Route path="/Reset">
+                      <Reset />
+                    </Route>
 
-                  {/* </Signin> */}
-                </Switch>
+                    {/* </Signin> */}
+                  </Switch>
+                </div>
               </div>
             </div>
+
+            {/* // <forgetpassword> */}
+
+            {/* <Security> */}
+
+            {/* reset */}
           </div>
-
-          {/* // <forgetpassword> */}
-
-          {/* <Security> */}
-
-          {/* reset */}
-        </div>
+        </Header>{" "}
       </div>
     </Router>
   );

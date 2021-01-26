@@ -25,39 +25,67 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-    /// some script
-    
-    // jquery ready start
-    $(document).ready(function() {
-      // jQuery code
-    
-      //////////////////////// Prevent closing from click inside dropdown
-        $(document).on('click', '.dropdown-menu', function (e) {
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      /// some script
+      $(document).ready(function () {
+        var trigger = $(".hamburger"),
+          overlay = $(".overlay"),
+          isClosed = false;
+
+        trigger.click(function () {
+          hamburger_cross();
+        });
+
+        function hamburger_cross() {
+          if (isClosed == true) {
+            overlay.hide();
+            trigger.removeClass("is-open");
+            trigger.addClass("is-closed");
+            isClosed = false;
+          } else {
+            overlay.show();
+            trigger.removeClass("is-closed");
+            trigger.addClass("is-open");
+            isClosed = true;
+          }
+        }
+
+        $('[data-toggle="offcanvas"]').click(function () {
+          $("#wrapper").toggleClass("toggled");
+        });
+      });
+      // jquery ready start
+      $(document).ready(function () {
+        // jQuery code
+
+        //////////////////////// Prevent closing from click inside dropdown
+        $(document).on("click", ".dropdown-menu", function (e) {
           e.stopPropagation();
         });
-    
+
         // make it as accordion for smaller screens
         if ($(window).width() < 992) {
-          $('.dropdown-menu a').click(function(e){
+          $(".dropdown-menu a").click(function (e) {
             e.preventDefault();
-              if($(this).next('.submenu').length){
-                $(this).next('.submenu').toggle();
-              }
-              $('.dropdown').on('hide.bs.dropdown', function () {
-             $(this).find('.submenu').hide();
-          })
+            if ($(this).next(".submenu").length) {
+              $(this).next(".submenu").toggle();
+            }
+            $(".dropdown").on("hide.bs.dropdown", function () {
+              $(this).find(".submenu").hide();
+            });
           });
-      }
-      
-    }); // jquery end
+        }
+      }); // jquery end
     </script>
-    </head>
+  </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
