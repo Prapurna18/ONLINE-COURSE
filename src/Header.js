@@ -15,52 +15,27 @@ function Header(props) {
         <ul class="nav sidebar-nav">
           <div class="sidebar-header">
             <div class="sidebar-brand">
-              <a href="#">Brand</a>
+              <a href="#">LEARNING PORTAL</a>
             </div>
           </div>
-          <li>
+          <li class="three line font">
             <a href="#home">Home</a>
           </li>
-          <li>
-            <a href="#about">Courses</a>
+          <li class="three line font">
+            <Link to="/Course">Course</Link>
           </li>
-          <li>
+          <li class="three line font">
             <a href="#events">About Us</a>
           </li>
-          <li>
-            <a href="#team">Team</a>
+          <li class="three line font">
+            <a href="#team">Become an Instructor</a>
           </li>
-          <li class="dropdown">
-            <a href="#works" class="dropdown-toggle" data-toggle="dropdown">
-              Works <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu animated fadeInLeft" role="menu">
-              <div class="dropdown-header">Dropdown heading</div>
-              <li>
-                <a href="#pictures">Pictures</a>
-              </li>
-              <li>
-                <a href="#videos">Videeos</a>
-              </li>
-              <li>
-                <a href="#books">Books</a>
-              </li>
-              <li>
-                <a href="#art">Art</a>
-              </li>
-              <li>
-                <a href="#awards">Awards</a>
-              </li>
-            </ul>
+
+          <li class="three line font">
+            <a href="#services">Account</a>
           </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="#followme">Follow me</a>
+          <li class="three line font">
+            <a href="#contact">Contact me</a>
           </li>
         </ul>{" "}
       </nav>
@@ -75,7 +50,7 @@ function Header(props) {
             <span class="hamb-middle"></span>
             <span class="hamb-bottom"></span>
           </button>
-          <div className="mr-auto">
+          <div className="explore-memu mr-auto">
             <Explore />
           </div>
           <div className="float-right">

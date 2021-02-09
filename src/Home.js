@@ -249,7 +249,7 @@ function Home() {
           {topCategories.map((eachCard) => {
             return (
               <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-                <div className="card">
+                <div className="card ">
                   <img className="card-img-top" src={eachCard.imgUrl} alt="" />
                   <div className="card-body">
                     <h4 className="card-title">{eachCard.courseName}</h4>

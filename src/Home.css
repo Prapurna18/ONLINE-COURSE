@@ -14,9 +14,9 @@ section {
 h1 {
   float: left;
   width: 100%;
-  color: #232323;
+  color: blue;
   margin-bottom: 30px;
-  font-size: 14px;
+  font-size: 32px;
 }
 h1 span {
   font-family: "Libre Baskerville", serif;
@@ -378,20 +378,20 @@ h1 a {
   width: 100%;
 }
 .font-course {
-  font-size: 50px;
+  font-size: 40px;
   color: darkblue;
+  margin-top: 125px;
   text-align: center;
-  margin-left: initial;
-  margin-top: 100px;
 }
 .img-fluid {
   width: 100%;
 }
 .note {
   color: darkblue;
-  font-size: 30px;
+  font-size: 17px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-left: 20px;
+  font-weight: bold;
 }
 .class-teaching {
   width: 100%;
@@ -420,9 +420,9 @@ h1 a {
 }
 
 .nav-link {
-  font-size: 40px;
+  font-size: 27px;
   font-size: bolder;
-  color: blue;
+  color: white;
 }
 .btn-primary {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -458,7 +458,7 @@ h1 a {
   padding: 175px;
   font-size: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: crimson;
+  color: yellow;
 }
 .us-buildings {
   background: url("./img/us.jpg") no-repeat;
@@ -488,4 +488,12 @@ h1 a {
   margin-right: 30px;
   font-family: "Impact, Haettenschweiler, " Arial Narrow Bold ", sans-serif";
   font-size: bold;
+}
+.img-fluid {
+  width: 100%;
+  height: 175px;
+  border-radius: 25px;
+}
+.card {
+  border-radius: 25px;
 }

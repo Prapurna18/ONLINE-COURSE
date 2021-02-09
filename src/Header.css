@@ -37,7 +37,7 @@ html {
   margin-left: -220px;
   overflow-y: auto;
   overflow-x: hidden;
-  background: #1a1a1a;
+  background: white;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -130,7 +130,7 @@ html {
 
 .sidebar-nav li a {
   display: block;
-  color: #ddd;
+  color: blue;
   text-decoration: none;
   padding: 10px 15px 10px 30px;
 }
@@ -156,7 +156,7 @@ html {
   height: 65px;
   position: relative;
   background: #212531;
-  background: linear-gradient(to right bottom, #2f3441 50%, #212531 50%);
+  background: linear-gradient(to right bottom, blue 50%, blue 50%);
   padding-top: 1em;
 }
 .sidebar-brand a {
@@ -237,13 +237,16 @@ a[href*="#followme"]::before {
   content: "\f099" !important;
   color: #0084b4;
 }
+.float-right {
+  padding: 5px;
+}
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
 
 .hamburger {
-  position: fixed;
-  top: 20px;
+  position: absolute;
+  top: 12px;
   z-index: 999;
   display: block;
   width: 32px;
@@ -371,4 +374,11 @@ a[href*="#followme"]::before {
 }
 .tabs-container {
   display: flex;
+  background: blue;
+}
+.explore-memu {
+  margin-left: 70px;
+}
+.three line font {
+  font-size: 20px;
 }

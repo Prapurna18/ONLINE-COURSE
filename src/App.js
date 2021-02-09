@@ -3,12 +3,15 @@ import "bootstrap/dist/css/bootstrap.css";
 import Signup from "./Signup";
 import Signin from "./Signin";
 import Header from "./Header";
+import Course from "./Course";
+
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Forgetpassword from "./Forgetpassword";
 import Security from "./Security";
 import Reset from "./Reset";
 import "./App.css";
 import Home from "./Home";
+import Courseslists from "./Courseslists";
 
 function App() {
   return (
@@ -49,6 +52,12 @@ function App() {
                     </Route>
                     <Route path="/Reset">
                       <Reset />
+                    </Route>
+                    <Route path="/Course">
+                      <Course />
+                    </Route>
+                    <Route path="/Courseslists">
+                      <Courseslists />
                     </Route>
 
                     {/* </Signin> */}
