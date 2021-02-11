@@ -57,15 +57,16 @@ function Forgetpassword() {
               placeholder=" Email"
               id="Em"
               disabled={showSecurity}
+              onBlur={handleSecurityClick}
             />
           </div>
-          <button
+          {/* <button
             onClick={handleSecurityClick}
             type="Submit"
             class="btn btn-primary"
           >
             Submit
-          </button>
+          </button> */}
 
           {showSecurity && <Security />}
         </div>
