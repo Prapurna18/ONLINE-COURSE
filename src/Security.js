@@ -38,40 +38,36 @@ function Security() {
     setRepeatPassword(event.target.value);
   };
   return (
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-sm-5">
-          <form action="/action_page.php">
-            <div class="form-group">
-              <div class="form-group">
-                <label for="sel1">Security Question</label>
-                <select class="form-control" id="sel1">
-                  <option>who is your favourite hero?</option>
-                  <option>what is your favourite food?</option>
-                  <option>whats your 1st school?</option>
-                  <option>what is your native place?</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder=" Security Answer"
-                  id="SQ"
-                />
-              </div>
-            </div>
-            <Link to="Reset">
-              <button type="Submit" class="btn btn-primary">
-                Submit
-              </button>
-            </Link>
-          </form>
+    <div className="row">
+      <div className="col">
+        <div class="form-group">
+          <div class="form-group">
+            <br />
+            <br />
+            <label for="sel1">
+              <h1>Security question</h1>
+            </label>
+            <select class="form-control" id="sel1">
+              <option>who is your favourite hero?</option>
+              <option>what is your favourite food?</option>
+              <option>whats your 1st school?</option>
+              <option>what is your native place?</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder=" Security Answer"
+              id="SQ"
+            />
+          </div>
         </div>
-        <div className="col-sm-1"></div>
-        <div className="col-sm-6 left-side-container-forgetPassword">
-          <div className="img"></div>
-        </div>
+        <Link to="Reset">
+          <button type="Submit" class="btn btn-primary">
+            Submit
+          </button>
+        </Link>
       </div>
     </div>
   );

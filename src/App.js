@@ -12,12 +12,14 @@ import Reset from "./Reset";
 import "./App.css";
 import Home from "./Home";
 import Courseslists from "./Courseslists";
+import { useState } from "react";
 
 function App() {
+  const [userDetails, setuserDetails] = useState(null);
   return (
     <Router>
       <div>
-        <Header>
+        <Header userDetails={userDetails} setuserDetails={setuserDetails}>
           <div className="App">
             <div className="container-fluid complete-background">
               <div className="row">
@@ -28,7 +30,7 @@ function App() {
                     </Route>
 
                     <Route path="/Signup">
-                      <Signup />
+                      <Signup setuserDetails={setuserDetails} />
                     </Route>
 
                     {/* <Signup>
@@ -38,7 +40,7 @@ function App() {
                     {/* <signIn> */}
                     {/* <Signin> */}
                     <Route path="/Signin">
-                      <Signin />
+                      <Signin userDetails={userDetails} />
                     </Route>
                     {/* <Route path="/explore">
                     <explore />

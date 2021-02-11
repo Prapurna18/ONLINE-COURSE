@@ -34,5 +34,12 @@
   color: #000000;
 }
 .dark {
-  background-color: #000000;
+  background-color: blue;
+}
+.rating_circle {
+  background-color: blue;
+  color: cornsilk;
+}
+.stars {
+  background-color: darkgreen;
 }

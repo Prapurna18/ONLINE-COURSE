@@ -245,7 +245,11 @@ function Rightsidefilter() {
                                     name="format[]"
                                     value="magazine"
                                   />
-                                  5*
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked">(5*)</span>
                                 </label>
                               </div>
                               <div className="checkbox">
@@ -255,7 +259,11 @@ function Rightsidefilter() {
                                     name="format[]"
                                     value="website"
                                   />
-                                  4*
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star ">(4*)</span>
                                 </label>
                               </div>
                               <div className="checkbox">
@@ -265,7 +273,11 @@ function Rightsidefilter() {
                                     name="format[]"
                                     value="website"
                                   />
-                                  3*
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star ">(3*)</span>
                                 </label>
                               </div>
                               <div className="checkbox">
@@ -275,7 +287,11 @@ function Rightsidefilter() {
                                     name="format[]"
                                     value="website"
                                   />
-                                  2*
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star ">(2*)</span>
                                 </label>
                               </div>
                               <div className="checkbox">
@@ -285,7 +301,11 @@ function Rightsidefilter() {
                                     name="format[]"
                                     value="website"
                                   />
-                                  1*
+                                  <span class="fa fa-star checked"></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star "></span>
+                                  <span class="fa fa-star ">(5)</span>
                                 </label>
                               </div>
                               {/* <div className="checkbox">

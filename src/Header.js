@@ -53,13 +53,7 @@ function Header(props) {
           <div className="explore-memu mr-auto">
             <Explore />
           </div>
-          <div className="float-right">
-            <Link to="/Signin">
-              <button type="Signin" class="btn btn-primary">
-                SIGNIN
-              </button>
-            </Link>
-          </div>
+
           <div className="float-right">
             <Link to="/Home">
               <button type="Home" class="btn btn-primary">
@@ -67,6 +61,27 @@ function Header(props) {
               </button>
             </Link>
           </div>
+          {props.userDetails ? (
+            <div className="float-right">
+              <Link to="/Signin">
+                <button
+                  onClick={() => props.setuserDetails(null)}
+                  type="logout"
+                  class="btn btn-primary"
+                >
+                  LOGOUT
+                </button>
+              </Link>
+            </div>
+          ) : (
+            <div className="float-right">
+              <Link to="/Signin">
+                <button type="Signin" class="btn btn-primary">
+                  SIGNIN
+                </button>
+              </Link>
+            </div>
+          )}
         </div>
 
         <div class="container-fluid">

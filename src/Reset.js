@@ -42,6 +42,8 @@ function Reset() {
       <div className="row">
         <div className="col-sm-5">
           <form action="/action_page.php">
+            <br />
+            <br />
             <h1>Reset Password</h1>
 
             <div className="form-group">

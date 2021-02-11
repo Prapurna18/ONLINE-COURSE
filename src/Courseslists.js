@@ -24,18 +24,18 @@ function Courseslists() {
     {
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFw8KYr1bDOUbjt2RB83GGlWDPPRVGFeAnCg&usqp=CAU",
-      courseName: "PHYTHON",
+      courseName: "Complete Python for beginers with examples",
       authorName: "JoshPortilla",
     },
     {
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7f06bqyjjCSXUw1AH6tmuriK46hYS6-PrLw&usqp=CAU",
-      courseName: "DATA SCIENCE",
+      courseName: "Data Science and deep learning with python",
       authorName: "JoshPortilla",
     },
     {
       imgUrl: "https://miro.medium.com/max/1200/1*pE2fOVDikEUwiQJlh4ggzg.jpeg",
-      courseName: "WEB DEVELOPMENT",
+      courseName: "Web development from Zero to Mastery",
       authorName: "JoshPortilla",
     },
   ];
@@ -63,21 +63,21 @@ function Courseslists() {
         <div className="col-sm-8">
           <img className="img-course" src={webimge} alt="online course" />
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-4 courselist-right">
           <h1>COURSE FEATURES</h1>
-          <p>Lectures 24</p>
+          <p>Lectures: 24</p>
           <hr />
-          <p>Quizes 0</p>
+          <p>Quizes: 0</p>
           <hr />
-          <p>duration 30hours</p>
+          <p>duration: 30hours</p>
           <hr />
-          <p>Skill level Beginner</p>
+          <p>Skill level: Beginner</p>
           <hr />
-          <p>Language English</p>
+          <p>Language : English</p>
           <hr />
-          <p>Students 300</p>
+          <p>Students: 300</p>
           <hr />
-          <p>Assignmants Yes</p>
+          <p>Assignmants: Yes</p>
         </div>
       </div>
       <hr />
@@ -90,30 +90,43 @@ function Courseslists() {
               href="#tabs-1"
               role="tab"
             >
-              <Link to={`${match.url}/`}>Overview</Link>
+              <Link to={`${match.url}/`} className="tabs-link-color">
+                Overview
+              </Link>
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
-              <Link to={`${match.url}/Curriculum`}>Curriculum</Link>
+              <Link to={`${match.url}/Curriculum`} className="tabs-link-color">
+                Curriculum
+              </Link>
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
-              <Link to={`${match.url}/Instructor`}>Instructor</Link>
+              <Link to={`${match.url}/Instructor`} className="tabs-link-color">
+                Instructor
+              </Link>
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
-              <Link to={`${match.url}/Reviews`}>Reviews</Link>
+              <Link to={`${match.url}/Reviews`} className="tabs-link-color">
+                Reviews
+              </Link>
             </a>
           </li>
           <li className="nav-item">
             <a className="nav-link" data-toggle="tab" href="#tabs-5" role="tab">
-              <Link to={`${match.url}/More`}>More</Link>
+              <Link to={`${match.url}/More`} className="tabs-link-color">
+                More
+              </Link>
             </a>
           </li>
         </ul>
+        <i className="bi bi-share"></i>
+        <i className="bi bi-download"></i>
+        <i className="bi bi-cart"></i>
       </div>
       {/* {/* <br /> */}
       <br />
@@ -140,7 +153,7 @@ function Courseslists() {
               </Route>
             </Switch>
           </div>
-          <div className="col-sm-4">
+          <div className="col-sm-4 right-part">
             <div className="col">
               <h1 className="note">YOU MAY LIKE</h1>
 
@@ -155,7 +168,7 @@ function Courseslists() {
                           alt="data science"
                         />
                       </div>
-                      <div className="card-body pt-5">
+                      <div className="card-body pt-1">
                         {/* <img
                              src="https://randomuser.me/api/portraits/men/64.jpg"
                              alt="profile-image"
@@ -164,6 +177,11 @@ function Courseslists() {
                         <h5 className="card-title">{eachCard.courseName}</h5>
                         <p className="card-text">{eachCard.authorName}</p>
                         <div className="icon-block">
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked">(5)</span>
                           {/* <a href="#">
                                <i className="fa fa-facebook"></i>
                              </a>
@@ -185,10 +203,6 @@ function Courseslists() {
             </div>
           </div>
         </div>
-
-        <i className="bi bi-share"></i>
-        <i className="bi bi-download"></i>
-        <i className="bi bi-cart"></i>
       </div>
       {/* <div className="container">
         <div className="row">
@@ -203,8 +217,9 @@ function Courseslists() {
 
       <hr />
       <div className="row">
-        <div className="col-sm-3">
-          <h1 className="footer">COMPANY</h1>
+        <div className="col-sm-3 footer-lp">
+          <br />
+          <h1 className="footer">Company</h1>
           <div className="text-footer">
             <p>About us</p>
             <p>Get the app</p>
@@ -212,24 +227,27 @@ function Courseslists() {
             <p>contact us</p>
           </div>
         </div>
-        <div className="col-sm-3">
-          <h1 className="footer">LINKS</h1>
+        <div className="col-sm-3 footer-lp">
+          <br />
+          <h1 className="footer">Links</h1>
           <div className="text-footer">
             <p>Home</p>
             <p>Courses</p>
             <p>Activity</p>
           </div>
         </div>
-        <div className="col-sm-3">
-          <h1 className="footer">MY ACCOUNTS</h1>
+        <div className="col-sm-3 footer-lp">
+          <br />
+          <h1 className="footer">My accounts</h1>
           <div className="text-footer">
             <p>Profile</p>
             <p>Members</p>
             <p>Registered</p>
           </div>
         </div>
-        <div className="col-sm-3">
-          <h1 className="footer">HELP LINE</h1>
+        <div className="col-sm-3 footer-lp">
+          <br />
+          <h1 className="footer">Helpline</h1>
         </div>
       </div>
     </Router>

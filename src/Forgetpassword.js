@@ -1,70 +1,80 @@
-import React, { useState } from 'react';
-import {Link} from "react-router-dom";
-import './Forgetpassword.css';
+import React, { useState } from "react";
+import Security from "./Security";
+import "./Forgetpassword.css";
 
+function Forgetpassword() {
+  const [Email, setEmail] = useState("");
+  const [Emailerror, setEmailerror] = useState("");
 
-function Forgetpassword(){
-    const [Email, setEmail] = useState("")
-    const [Emailerror, setEmailerror] = useState("")
+  const [NewPassword, setNewPassword] = useState("");
 
-    const [NewPassword, setNewPassword] = useState("")
+  const [NewPassworderror, setNewPassworderror] = useState("");
+  const [RepeatPassword, setRepeatPassword] = useState("");
 
-
-    const [NewPassworderror, setNewPassworderror] = useState("")
-    const [RepeatPassword, setRepeatPassword] = useState("")
-  
-  
-    const [RepeatPassworderror, setRepeatPassworderror] = useState("")
-const handleClick = ()=>{
+  const [RepeatPassworderror, setRepeatPassworderror] = useState("");
+  const [showSecurity, setShowSecurity] = useState(false);
+  const handleClick = () => {
     if (Email === "") {
-        console.log("Email should not be empty")
-        setEmailerror("Email should not be empty")
+      console.log("Email should not be empty");
+      setEmailerror("Email should not be empty");
 
-        if (NewPassword !== RepeatPassword) {
-            setNewPassworderror("Password and NewPassword should be same")
+      if (NewPassword !== RepeatPassword) {
+        setNewPassworderror("Password and NewPassword should be same");
+      }
     }
-}
-}
-const deviprapurna18 = (event) => {
+  };
+  const deviprapurna18 = (event) => {
     console.log(event.target.value);
 
     setEmail(event.target.value);
-  }
+  };
   const handleNewPassword = (event) => {
     console.log(event.target.value);
 
     setNewPassword(event.target.value);
-  }
+  };
   const handleRepeatPassword = (event) => {
     console.log(event.target.value);
 
     setRepeatPassword(event.target.value);
-  }
-    return(
-        <div className="container-fluid">
-        <div className="row">
+  };
+  const handleSecurityClick = () => {
+    setShowSecurity(true);
+  };
+  return (
+    <div className="container-fluid">
+      <div className="row">
         <div className="col-sm-5">
-            <h1>Forget Password</h1>
+          <br />
+          <br />
+          <h1>Forget Password</h1>
 
-<form action="/action_page.php">
+          <div class="form-group">
+            <input
+              onChange={deviprapurna18}
+              type="Email"
+              class="form-control"
+              placeholder=" Email"
+              id="Em"
+              disabled={showSecurity}
+            />
+          </div>
+          <button
+            onClick={handleSecurityClick}
+            type="Submit"
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
 
-<div class="form-group">
-<input onChange={deviprapurna18} type="Email" class="form-control" placeholder=" Email" id="Em"/>
-</div>
-<Link to="Security"><button type="Submit" class="btn btn-primary">Submit</button></Link>
-
-</form>
-
+          {showSecurity && <Security />}
         </div>
         <div className="col-sm-1"></div>
         <div className="col-sm-6 left-side-container-forgetPassword">
-            <div className="img">
-
-            </div>
-
+          <div className="img"></div>
         </div>
-        </div>
-        </div>
-    )
+      </div>
+    </div>
+  );
 }
-export default Forgetpassword
+export default Forgetpassword;

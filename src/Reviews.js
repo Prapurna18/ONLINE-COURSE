@@ -15,6 +15,8 @@ function Review() {
       </div>
       <div className="row">
         <div className="col-md-2">
+          <br />
+          <br />
           <button className="rating_circle">4.1</button>
 
           <div>

@@ -14,7 +14,7 @@ section {
 h1 {
   float: left;
   width: 100%;
-  color: blue;
+  color: darkblue;
   margin-bottom: 30px;
   font-size: 32px;
 }
@@ -130,7 +130,7 @@ h1 a {
 }
 .profile-card-2 h5 {
   font-weight: 600;
-  color: #6ab04c;
+  color: black;
 }
 .profile-card-2 .card-text {
   font-weight: 300;
@@ -380,12 +380,15 @@ h1 a {
 .font-course {
   font-size: 40px;
   color: darkblue;
-  margin-top: 125px;
-  text-align: center;
 }
 .img-fluid {
   width: 100%;
 }
+.home-page {
+  text-align: center;
+  margin-top: 125px;
+}
+
 .note {
   color: darkblue;
   font-size: 17px;
@@ -471,7 +474,7 @@ h1 a {
   margin-top: 250px;
   font-size: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: rgb(78, 22, 104);
+  color: darkblue;
   text-align: center;
 }
 .top-button {
@@ -496,4 +499,10 @@ h1 a {
 }
 .card {
   border-radius: 25px;
+}
+.checked {
+  color: green;
+}
+.sr-only {
+  color: darkblue;
 }

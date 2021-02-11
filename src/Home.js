@@ -12,24 +12,24 @@ function Home() {
     {
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFw8KYr1bDOUbjt2RB83GGlWDPPRVGFeAnCg&usqp=CAU",
-      courseName: "PHYTHON",
+      courseName: "Complete Python for beginers with examples",
       authorName: "JoshPortilla",
     },
     {
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7f06bqyjjCSXUw1AH6tmuriK46hYS6-PrLw&usqp=CAU",
-      courseName: "DATA SCIENCE",
+      courseName: "Data Science and deep learning with python",
       authorName: "JoshPortilla",
     },
     {
       imgUrl: "https://miro.medium.com/max/1200/1*pE2fOVDikEUwiQJlh4ggzg.jpeg",
-      courseName: "WEB DEVELOPMENT",
+      courseName: "Web development from Zero to Mastery",
       authorName: "JoshPortilla",
     },
     {
       imgUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW901oE6_L8WAw9Dhjxa4cC93UBjAKiSsV9w&usqp=CAU",
-      courseName: "DEVOPS",
+      courseName: "Devops full tutorial advanced 2021 for beginers",
       authorName: "JoshPortilla",
     },
   ];
@@ -96,7 +96,7 @@ function Home() {
       <div className="container-fluid">
         <div className="row">
           <div className="col-sm-6">
-            <h1 className="font-course">
+            <h1 className="font-course home-page">
               Learn the latest courses and achieve your goals. Build your Career
             </h1>
             <br />
@@ -164,7 +164,7 @@ function Home() {
           <h1 className="note">FEATURED COURSES BY CATEGORY</h1>
           {cardDetails.map((eachCard) => {
             return (
-              <div className="col-sm-3">
+              <div className="col-sm-3 card-padding">
                 <div className="card profile-card-2">
                   <div className="card-img-block">
                     <img
@@ -173,7 +173,7 @@ function Home() {
                       alt="data science"
                     />
                   </div>
-                  <div className="card-body pt-5">
+                  <div className="card-body pt-1">
                     {/* <img
                              src="https://randomuser.me/api/portraits/men/64.jpg"
                              alt="profile-image"
@@ -182,6 +182,11 @@ function Home() {
                     <h5 className="card-title">{eachCard.courseName}</h5>
                     <p className="card-text">{eachCard.authorName}</p>
                     <div className="icon-block">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked">(5)</span>
                       {/* <a href="#">
                                <i className="fa fa-facebook"></i>
                              </a>
@@ -204,7 +209,7 @@ function Home() {
           <h1 className="note">STUDENTS ARE VIEWING</h1>
           {studentViewing.map((eachCard) => {
             return (
-              <div className="col-sm-3">
+              <div className="col-sm-3  card-padding">
                 <div className="card profile-card-2">
                   <div className="card-img-block">
                     <img
@@ -213,7 +218,7 @@ function Home() {
                       alt="data science"
                     />
                   </div>
-                  <div className="card-body pt-5">
+                  <div className="card-body pt-1">
                     {/* <img
                              src="https://randomuser.me/api/portraits/men/64.jpg"
                              alt="profile-image"
@@ -222,6 +227,11 @@ function Home() {
                     <h5 className="card-title">{eachCard.courseName}</h5>
                     <p className="card-text">{eachCard.authorName}</p>
                     <div className="icon-block">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked">(5)</span>
                       {/* <a href="#">
                                <i className="fa fa-facebook"></i>
                              </a>
@@ -248,7 +258,7 @@ function Home() {
 
           {topCategories.map((eachCard) => {
             return (
-              <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+              <div className="col-12 col-sm-8 col-md-6 col-lg-4  card-padding">
                 <div className="card ">
                   <img className="card-img-top" src={eachCard.imgUrl} alt="" />
                   <div className="card-body">
@@ -314,11 +324,11 @@ function Home() {
 
         <div class="border-separator" id="navbarText"></div>
         <br />
-        <br />
 
         <div className="row">
-          <div className="col-sm-3">
-            <h1 className="footer">COMPANY</h1>
+          <div className="col-sm-3 footer-lp">
+            <br />
+            <h1 className="footer">Company</h1>
             <div className="text-footer">
               <p>About us</p>
               <p>Get the app</p>
@@ -326,24 +336,27 @@ function Home() {
               <p>contact us</p>
             </div>
           </div>
-          <div className="col-sm-3">
-            <h1 className="footer">LINKS</h1>
+          <div className="col-sm-3 footer-lp">
+            <br />
+            <h1 className="footer">Links</h1>
             <div className="text-footer">
               <p>Home</p>
               <p>Courses</p>
               <p>Activity</p>
             </div>
           </div>
-          <div className="col-sm-3">
-            <h1 className="footer">MY ACCOUNTS</h1>
+          <div className="col-sm-3 footer-lp">
+            <br />
+            <h1 className="footer">My accounts</h1>
             <div className="text-footer">
               <p>Profile</p>
               <p>Members</p>
               <p>Registered</p>
             </div>
           </div>
-          <div className="col-sm-3">
-            <h1 className="footer">HELP LINE</h1>
+          <div className="col-sm-3 footer-lp">
+            <br />
+            <h1 className="footer">Helpline</h1>
           </div>
         </div>
       </div>

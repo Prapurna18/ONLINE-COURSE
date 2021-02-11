@@ -5,6 +5,26 @@
   padding: 2rem;
 }
 .tabs-color1 {
-  color: blue;
+  color: darkblue;
   font-size: 130%;
+}
+.bi {
+  font-size: 25px;
+  padding: 20px;
+}
+.courselist-right {
+  text-align: center;
+}
+.footer-lp {
+  background-color: #0062cc;
+  color: cornsilk;
+}
+.footer {
+  color: cornsilk;
+}
+.right-part {
+  margin-bottom: 57px;
+}
+.tabs-link-color {
+  color: darkblue;
 }
